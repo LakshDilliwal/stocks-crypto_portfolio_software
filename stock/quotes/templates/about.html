@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>About Us...</h1>
+
+<div class="container">
+    <p>We are a team of four highly motivated individuals dedicated to developing a comprehensive financial web app. With a
+    strong passion for both finance and technology, our goal is to provide our users with a cutting-edge platform that
+    offers invaluable insights and powerful tools to help inform their investment decisions.</p>
+    <p>Our team consists of:</p>
+
+    <div class="team">
+        <div class="member">
+            <img src="https://media.licdn.com/dms/image/C4D03AQEzC1JGA6Ij2Q/profile-displayphoto-shrink_800_800/0/1652474740624?e=2147483647&v=beta&t=ZSaXOZPDgHfw04SQXbICG5JYpSJuHqon96AOX7RWPFg" alt="Laksh">
+            <h3>Laksh Dilliwal</h3>
+            <p>Research & Analyst</p>
+        </div>
+
+        <div class="member">
+            <img src="https://media.licdn.com/dms/image/D5603AQEkFrb5hgEU1g/profile-displayphoto-shrink_400_400/0/1670911124903?e=1686182400&v=beta&t=4c07meJAaw04eEiv2KP65hmmM94EQQeLuPO9G7V9MYs" alt="Ankit">
+            <h3>Ankit Singh</h3>
+            <p>Backend Developer &</p>
+            <p>Database Administrator</p>
+        </div>
+
+        <div class="member">
+            <img src="https://media.licdn.com/dms/image/C5603AQFwwzwN52aLOQ/profile-displayphoto-shrink_400_400/0/1656404150307?e=1686182400&v=beta&t=GlrbbWhBT-m-HkvQnbIwelBIKd8TaIvSBN5mxYg02sM" alt="Aman">
+            <h3>Aman Kushwah</h3>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="member">
+            <img src="https://media.licdn.com/dms/image/C4D03AQHlEA4Y1Lh7SQ/profile-displayphoto-shrink_100_100/0/1618232458470?e=1686182400&v=beta&t=PcdNKzzLR3oWppHYo675AySqehX-CyKe7AVsPMxHYrs" alt="Akar">
+            <h3>Akar Sharma</h3>
+            <p>Frontend Developer</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* internal styles for the about page */
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(245, 245, 245, 0.5);
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .member {
+        text-align: center;
+        width: 200px;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #888;
+    }
+</style>
+
+{% endblock %}
